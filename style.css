@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55) 0s;
+    z-index: 5000;
+}
+
+header #logo {
+    color: white;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Nerko One', serif;
+}
+
+.header.active {
+    background-color: #282828;
+    padding: 10px 0;
+}
+
+#buy {
+    color: #484848;
+    padding: 70px 100px 30px 100px;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {
+    padding: 25px;
+    background-color: #282828;
+    text-align: center;
+    font-size: 1.5em;
+    color: #484848;
+}
+
+#footer {
+    margin-top: 15px;
+}
+
+#copyright {
+    background-color: #383838;
+    color: white;
+    padding: 0 0 10px;
+    border-top: 5px solid #434343;
+    border-left: 5px solid #333333;
+    border-bottom: 5px solid #434343;
+    border-right: 5px solid #333333;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 15%;
+}
+
+    #about {
+        width: 50%;
+        float: right;
+        text-align: right;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        text-align: center;
+        width: 100%;
+        font-size: 1.5em;
+}
+
+    #logo > span {
+        margin: unset;
+    }
+
+    #about {
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    #about > a {
+        margin: unset;
+    }
+}
+
+#logo > span, #about > a {
+    color: white;
+    text-decoration: none;
+}
+
+#about > a:hover, #logo span:hover{
+    color: silver;
+    text-decoration: white;
+}
+
+#about > a {
+    margin-right: 10%;
+}
+
+#info {
+    padding: 100px 100px 100px 100px;
+    background-color: white;
+    color: #484848;
+    font-size: 2em;
+    text-align: center;
+}
+
+.info {
+    padding-top: 50px;
+}
+
+.info span {
+    text-align: left;
+    display: block;
+}
+
+.animate {
+    color: plum;
+}
+
+.info span:not(:first-child) {
+    padding-top: 2%;
+}
+
+#top {
+    /* http://mc.zalgo.ru:1000/IT/IT1/Nnican/img/axolotl.gif */
+    background-image: url(img/axolotl.gif);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    color: #181818;
+    height: 755px;
+}
+
+#top h1 {
+    padding-top: 20%;
+    color: snow;
+    font-size: 5em;
+}
+
+#top h3 {
+    color: white;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px){
+    #top {
+        font-size: 1em;
+    }
+}
+@media (max-width: 650px) {
+    #top {
+        font-size: 0.5em;
+        padding-top: 50%;
+    }
+}
+
+.rainbow-animated {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 20s ease infinite;
+    animation: rainbow 20s ease infinite;
+    line-height: 25px;
+}
+
+.royal_pink-animated {
+    background: linear-gradient(to right, pink, #dd888a, palevioletred);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
+    line-height: 25px;
+}
+
+.golden-animated {
+    background: linear-gradient(to right, gold, #ecdf7a, #b29459);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
+    line-height: 25px;
+}
+
+.emerald-animated {
+    background: linear-gradient(to right, #6cc196, #90b000, #3b8272);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
+    line-height: 25px;
+}
+
+.aquatic_blue-animated {
+    background: linear-gradient(to right, #8fced6, #448abd, #06686d);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
+    line-height: 25px;
+}
+
+.regal_blue-animated {
+    background: linear-gradient(to right, #098af5, #1723c9), #170f86;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
+    line-height: 25px;
+}
+
+.space_black-animated {
+    background: linear-gradient(to right, #838383, #2b2929 , black);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
+    line-height: 25px;
+}
+
+@-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+    border: hidden;
+}
+
+.slick-arrow:hover {
+    cursor: pointer;
+}
+
+.images {
+    position: relative;
+}
+
+.slick-arrow.slick-prev {
+    left: 0;
+    background: url(img/sl-arrow_l.png) 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next {
+    right: 0;
+    background: url(img/sl-arrow_r.png) 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.slick-dots button {
+    font-size: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: #484848;
+    border-radius: 50%;
+    border: none;
+}
+
+#buy.slick-dots button   {
+
+}
+
+.slick-dots button:hover {
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 3px solid #484848;
+}
+
+.slide {
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55) 0s;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.slide.slick-center {
+    opacity: 1;
+}
+
+.imagesbig {
+    margin: 25px;
+    font-size: 2em;
+}
+
+.bigslide span {
+    display: block;
+    line-height: 100px;
+}
+
+#reviews {
+    color: white;
+    background-color: #383838;
+    text-align: center;
+    padding: 60px 20% 25px 20%;
+    font-size: 0.5em;
+    display: box;
+}
+
+#reviews h1 {
+    font-size: 5em;
+}
+
+.reviewer {
+    max-width: 20%;
+    border-radius: 50%;
+    margin: 2% 5% 2% 5%;
+}
+
+.reviewer:hover {
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.reviewer:not(:hover) {
+    opacity: 0.3;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+}
+
+.review {
+    display: none;
+    font-size: 4em;
+}
+
+.review.review-active {
+    display: block;
+}
+
+.reviewer.reviewer-active {
+    opacity: 1;
+}
+
+.far.fa-copyright {
+    font-size: 0.7em;
+    text-decoration: none;
+    color: #484848;
+}
+
+.far.fa-copyright:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+/* .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup_content {
+    transform: perspective(600px);
+    opacity: 1;
+}
+
+.popup_body {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20% 10px;
+}
+
+.popup_content {
+    background-color: white;
+    color: #484848;
+    max-width: 800px;
+    position: relative;
+}
+
+.far.fa-times-circle {
+    color: #484848;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+
+.far.fa-times-circle:hover {
+    color: silver;
+}
+
+.popup_title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.popup_text {
+} */
